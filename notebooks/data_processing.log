@@ -48,3 +48,6 @@
 2024-09-20 16:14:58,756:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-09-20 16:15:05,237:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-09-20 16:15:05,251:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 16:57:31,275:INFO:Load train data
+2024-09-20 17:00:10,931:INFO:Load train data
+2024-09-20 17:02:05,172:INFO:Load train data

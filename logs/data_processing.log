@@ -1,0 +1,121 @@
+2024-09-20 17:04:10,828:INFO:Load train data
+2024-09-20 17:05:16,400:INFO:Load test data
+2024-09-20 17:06:16,009:INFO:Load store data
+2024-09-20 17:10:30,688:INFO:    Id  Store  DayOfWeek        Date  Open  Promo StateHoliday  SchoolHoliday
+0  1.0    1.0        4.0  2015-09-17   1.0    1.0            0            0.0
+1  2.0    3.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2  3.0    7.0        4.0  2015-09-17   1.0    1.0            0            0.0
+3  4.0    8.0        4.0  2015-09-17   1.0    1.0            0            0.0
+4  5.0    9.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2024-09-20 17:12:06,981:INFO:The first 5 rows
+2024-09-20 17:12:06,982:INFO:    Id  Store  DayOfWeek        Date  Open  Promo StateHoliday  SchoolHoliday
+0  1.0    1.0        4.0  2015-09-17   1.0    1.0            0            0.0
+1  2.0    3.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2  3.0    7.0        4.0  2015-09-17   1.0    1.0            0            0.0
+3  4.0    8.0        4.0  2015-09-17   1.0    1.0            0            0.0
+4  5.0    9.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2024-09-20 17:18:08,333:INFO:Check the value distribution of promotion in both datasets 
+2024-09-20 17:18:08,339:INFO:Promo
+0.0    0.604167
+1.0    0.395833
+Name: proportion, dtype: float64
+2024-09-20 17:18:08,341:INFO:Promo
+0.0    0.604167
+1.0    0.395833
+Name: proportion, dtype: float64
+2024-09-20 17:18:08,342:INFO:Promo2
+1.0    0.522099
+0.0    0.477901
+Name: proportion, dtype: float64
+2024-09-20 17:18:08,373:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:18:08,382:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:18:08,408:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:18:08,416:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:18:08,440:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:18:08,455:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:23:06,144:INFO:Check & compare sales behavior before, during, and after holidays
+2024-09-20 17:23:14,640:INFO:                     count         mean          std  min     25%     50%  \
+holiday_category                                                            
+During Holiday    181721.0  6476.522207  3709.677337  0.0  4447.0  6197.0   
+Non-Holiday       835488.0  5620.979034  3862.873159  0.0  3506.0  5642.0   
+
+                     75%      max  
+holiday_category                   
+During Holiday    8343.0  38367.0  
+Non-Holiday       7749.0  41551.0  
+2024-09-20 17:24:13,137:INFO:Find out any seasonal (Christmas, Easter, etc) purchase behavior
+2024-09-20 17:24:19,844:INFO:                     count         mean          std  min     25%     50%  \
+holiday_category                                                            
+Christmas           4100.0   168.733171  1492.274865  0.0     0.0     0.0   
+Easter              6690.0   214.311510  1816.918138  0.0     0.0     0.0   
+Non-Holiday       986159.0  5947.483893  3767.890619  0.0  3967.0  5849.0   
+Public Holiday     20260.0   290.735686  1870.281698  0.0     0.0     0.0   
+
+                     75%      max  
+holiday_category                   
+Christmas            0.0  32169.0  
+Easter               0.0  38722.0  
+Non-Holiday       7936.0  41551.0  
+Public Holiday       0.0  38484.0  
+2024-09-20 17:25:56,597:INFO:How does promo affect sales? Are the promos attracting more customers? How does it affect already existing customers?
+2024-09-20 17:25:56,798:INFO:   Promo    avg_sales  avg_customers    sales_std  customers_std  sales_min  \
+0      0  4406.050805     517.823542  3442.450020     452.881419          0   
+1      1  7991.152046     820.098815  3419.025495     419.897191          0   
+
+   sales_max  customers_min  customers_max  
+0      41551              0           5387  
+1      38722              0           7388  
+2024-09-20 17:25:57,457:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:25:58,336:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:25:59,432:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:25:59,974:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:27:00,285:INFO:Could the promos be deployed in more effective ways? Which stores should promos be deployed in?
+2024-09-20 17:27:00,543:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:27:00,628:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:27:06,477:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:27:06,489:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 17:27:14,072:INFO:Promo  Store   Sales_Diff
+0          1  1953.891266
+1          2  3317.758247
+2          3  4641.070447
+3          4  3801.571249
+4          5  3361.995189
+...      ...          ...
+1110    1111  3321.806472
+1111    1112  6514.826088
+1112    1113  2919.723568
+1113    1114  7123.754954
+1114    1115  2991.045017
+
+[1114 rows x 2 columns]
+2024-09-20 17:27:43,239:INFO:Trends of customer behavior during store opening and closing times
+2024-09-20 17:28:34,611:INFO:Which stores are open on all weekdays? How does that affect their sales on weekends?
+2024-09-20 17:28:34,915:INFO:   Store  total_sales  avg_customers
+0     85      2261744    1178.037313
+1    262      6162493    3789.623134
+2    335      2266506    1605.742537
+3    423      2963899    1911.630597
+4    494      1781482     978.141791
+5    562      4406268    2933.664179
+6    682      2035533    1328.992537
+7    733      3907309    3277.361940
+8    769      2802093    2891.235075
+9   1097      2573336    2258.735075
+2024-09-20 17:29:50,633:INFO:Check how the assortment type affects sales
+2024-09-20 17:30:16,141:INFO:Check how the assortment type affects sales
+2024-09-20 17:30:16,326:INFO:  StoreType Assortment         Sales
+0         a          a   5398.858310
+1         a          c   6310.867032
+2         b          a  10821.619806
+3         b          b   8553.931999
+4         b          c  17969.556263
+5         c          a   5647.174314
+6         c          c   5805.782193
+7         d          a   5317.885943
+8         d          c   5826.407660
+2024-09-20 17:31:09,701:INFO: How does the distance to the next competitor affect sales? What if the store and its competitors all happen to be in city centers, does the distance matter in that case?
+2024-09-20 17:31:12,042:INFO:Correlation between Competition Distance and Sales: -0.02
+2024-09-20 17:31:53,608:INFO:# How does the opening or reopening of new competitors affect stores? 
+2024-09-20 17:31:54,102:INFO:  BeforeOrAfterCompetition        Sales
+0    After Competitor Open  5755.586092
+1   Before Competitor Open  5974.642737
