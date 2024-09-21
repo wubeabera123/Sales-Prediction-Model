@@ -1,0 +1,101 @@
+2024-09-21 09:43:03,304:INFO:Load cleaned store data
+2024-09-21 09:49:48,602:INFO:Load cleaned store data
+2024-09-21 09:54:03,340:INFO:Load cleaned store data
+2024-09-21 09:54:42,917:INFO:Load cleaned store data
+2024-09-21 09:55:10,115:INFO:Load cleaned store data
+2024-09-21 09:57:15,461:INFO:Load cleaned store data
+2024-09-21 10:54:34,577:INFO:Starting to preprocess categorical columns (StoreType, Assortment, PromoInterval)
+2024-09-21 10:54:35,037:INFO:One-hot encoded StoreType and Assortment columns
+2024-09-21 10:54:36,983:INFO:Processed PromoInterval and dropped the original column
+2024-09-21 10:55:13,980:INFO:Starting to preprocess categorical columns (StoreType, Assortment, PromoInterval)
+2024-09-21 10:55:30,794:INFO:Load cleaned store data
+2024-09-21 10:55:41,903:INFO:Starting to preprocess categorical columns (StoreType, Assortment, PromoInterval)
+2024-09-21 10:55:42,168:INFO:One-hot encoded StoreType and Assortment columns
+2024-09-21 10:55:43,845:INFO:Processed PromoInterval and dropped the original column
+2024-09-21 11:06:42,196:INFO:Starting to calculate Competition and Promo2 related features
+2024-09-21 11:06:42,230:INFO:Calculated CompetitionOpenMonths and filled NaN values
+2024-09-21 11:06:42,256:INFO:Calculated Promo2OpenMonths and filled NaN values
+2024-09-21 11:08:22,990:INFO:Starting to calculate Competition and Promo2 related features
+2024-09-21 11:08:23,021:INFO:Calculated CompetitionOpenMonths and filled NaN values
+2024-09-21 11:08:23,051:INFO:Calculated Promo2OpenMonths and filled NaN values
+2024-09-21 11:08:23,051:INFO:Filling missing values with 0 where appropriate
+2024-09-21 11:08:23,103:INFO:Filled all remaining NaN values
+2024-09-21 11:10:08,116:INFO:Starting to scale numeric features
+2024-09-21 11:10:08,249:INFO:Scaled features: CompetitionDistance, CompetitionOpenMonths, and Promo2OpenMonths
+2024-09-21 11:11:12,764:INFO:Starting to scale numeric features
+2024-09-21 11:11:12,878:INFO:Scaled features: CompetitionDistance, CompetitionOpenMonths, and Promo2OpenMonths
+2024-09-21 12:07:16,981:INFO:Load cleaned store data
+2024-09-21 12:07:18,113:INFO:Load cleaned train data
+2024-09-21 12:07:50,309:INFO:Load cleaned store data
+2024-09-21 12:07:51,367:INFO:Load cleaned train data
+2024-09-21 12:19:01,407:INFO:Merging Promo, Open, Customers, StateHoliday, SchoolHoliday, DayOfWeek columns from train data to store data
+2024-09-21 12:35:55,210:INFO:Merging Promo, Open, Customers, StateHoliday, SchoolHoliday, DayOfWeek columns from train data to store data
+2024-09-21 12:40:19,925:INFO:Merging Promo, Open, Customers, StateHoliday, SchoolHoliday, DayOfWeek columns from train data to store data
+2024-09-21 12:45:21,576:INFO:Starting to preprocess categorical columns (StoreType, Assortment, PromoInterval)
+2024-09-21 12:45:44,237:INFO:Starting to calculate Competition and Promo2 related features
+2024-09-21 12:45:49,159:INFO:Starting to scale numeric features
+2024-09-21 14:34:31,577:INFO:Load cleaned store data
+2024-09-21 14:34:33,924:INFO:Load cleaned train data
+2024-09-21 14:34:40,125:INFO:Merging Promo, Open, Customers, StateHoliday, SchoolHoliday, DayOfWeek columns from train data to store data
+2024-09-21 14:38:22,857:INFO:Load cleaned store data
+2024-09-21 14:38:25,160:INFO:Load cleaned train data
+2024-09-21 14:49:44,341:INFO:Load cleaned store data
+2024-09-21 14:49:46,215:INFO:Load cleaned train data
+2024-09-21 15:17:11,684:INFO:Load cleaned store data
+2024-09-21 15:19:29,038:INFO:Load cleaned store data
+2024-09-21 15:29:53,711:INFO:Starting preprocessing with updated dataframe
+2024-09-21 15:29:54,096:INFO:One-hot encoded StoreType, Assortment, and StateHoliday columns
+2024-09-21 15:30:38,213:INFO:Starting preprocessing with updated dataframe
+2024-09-21 15:31:14,622:INFO:Starting preprocessing with updated dataframe
+2024-09-21 15:31:59,996:INFO:Load cleaned store data
+2024-09-21 15:32:07,503:INFO:Starting preprocessing with updated dataframe
+2024-09-21 15:32:07,953:INFO:One-hot encoded StoreType, Assortment, and StateHoliday columns
+2024-09-21 15:33:53,786:INFO:Handling missing values for Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-21 15:33:53,851:INFO:Filled missing values in Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-21 15:36:05,648:INFO:Extracting features from the Date column
+2024-09-21 15:36:07,359:INFO:Extracted day of week, weekend indicator, and month-day-related features
+2024-09-21 15:36:52,816:INFO:Extracting features from the Date column
+2024-09-21 15:36:54,114:INFO:Extracted day of week, weekend indicator, and month-day-related features
+2024-09-21 15:37:07,139:INFO:Extracting features from the Date column
+2024-09-21 15:37:08,357:INFO:Extracted day of week, weekend indicator, and month-day-related features
+2024-09-21 15:38:14,577:INFO:Starting to scale numeric features
+2024-09-21 15:38:14,818:INFO:Scaled features: Sales, CompetitionDistance, Promo2SinceWeek, and Promo2SinceYear
+2024-09-21 15:39:05,745:INFO:Preprocessing completed and dataset is ready for modeling
+2024-09-21 15:52:37,832:INFO:Training data shape: (813767, 26)
+2024-09-21 15:52:37,832:INFO:Testing data shape: (203442, 26)
+2024-09-21 15:54:04,310:INFO:Load cleaned store data
+2024-09-21 15:54:17,221:INFO:Training data shape: (813767, 16)
+2024-09-21 15:54:17,221:INFO:Testing data shape: (203442, 16)
+2024-09-21 15:54:17,248:INFO:Pipeline created with StandardScaler and RandomForestRegressor.
+2024-09-21 15:59:30,371:INFO:Model training completed.
+2024-09-21 15:59:40,474:INFO:Model prediction completed.
+2024-09-21 15:59:40,478:INFO:Test RMSE: 506.0600
+2024-09-21 16:22:00,445:INFO:Missing values in X before preprocessing: 
+Store                             0
+StoreType                         0
+Assortment                        0
+CompetitionDistance            2642
+CompetitionOpenSinceMonth    323348
+CompetitionOpenSinceYear     323348
+Promo2                            0
+Promo2SinceWeek              508031
+Promo2SinceYear              508031
+PromoInterval                508031
+DayOfWeek                         0
+Customers                         0
+Open                              0
+Promo                             0
+StateHoliday                      0
+SchoolHoliday                     0
+dtype: int64
+2024-09-21 16:22:00,946:INFO:Training data shape: (813767, 16)
+2024-09-21 16:22:00,946:INFO:Testing data shape: (203442, 16)
+2024-09-21 16:22:00,977:INFO:Numeric features selected for scaling: ['Store', 'CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek', 'Promo2SinceYear', 'DayOfWeek', 'Customers', 'Open', 'Promo', 'SchoolHoliday']
+2024-09-21 16:22:00,977:INFO:Columns in X_train: ['Store', 'StoreType', 'Assortment', 'CompetitionDistance', 'CompetitionOpenSinceMonth', 'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval', 'DayOfWeek', 'Customers', 'Open', 'Promo', 'StateHoliday', 'SchoolHoliday']
+2024-09-21 16:22:01,310:INFO:Pipeline created with StandardScaler and RandomForestRegressor.
+2024-09-21 16:22:32,766:INFO:Training data shape: (813767, 16)
+2024-09-21 16:22:32,767:INFO:Testing data shape: (203442, 16)
+2024-09-21 16:22:32,799:INFO:Pipeline created with StandardScaler and RandomForestRegressor.
+2024-09-21 16:27:37,828:INFO:Model training completed.
+2024-09-21 16:27:48,179:INFO:Model prediction completed.
+2024-09-21 16:27:48,194:INFO:Test RMSE: 506.0600
