@@ -203,3 +203,38 @@ Name: proportion, dtype: float64
 2024-09-21 09:09:55,941:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-09-21 09:09:55,970:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-09-21 09:09:55,980:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-21 09:47:47,561:INFO:Load train data
+2024-09-21 09:47:49,754:INFO:Load test data
+2024-09-21 09:47:54,887:INFO:Load store data
+2024-09-21 09:48:01,102:INFO:The first 5 rows
+2024-09-21 09:48:01,102:INFO:    Id  Store  DayOfWeek        Date  Open  Promo StateHoliday  SchoolHoliday
+0  1.0    1.0        4.0  2015-09-17   1.0    1.0            0            0.0
+1  2.0    3.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2  3.0    7.0        4.0  2015-09-17   1.0    1.0            0            0.0
+3  4.0    8.0        4.0  2015-09-17   1.0    1.0            0            0.0
+4  5.0    9.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2024-09-21 09:48:29,649:INFO:The first 5 rows
+2024-09-21 09:48:29,649:INFO:    Id  Store  DayOfWeek        Date  Open  Promo StateHoliday  SchoolHoliday
+0  1.0    1.0        4.0  2015-09-17   1.0    1.0            0            0.0
+1  2.0    3.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2  3.0    7.0        4.0  2015-09-17   1.0    1.0            0            0.0
+3  4.0    8.0        4.0  2015-09-17   1.0    1.0            0            0.0
+4  5.0    9.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2024-09-21 10:28:03,647:INFO:Load train data
+2024-09-21 10:28:39,828:INFO:Load test data
+2024-09-21 10:28:46,721:INFO:Load store data
+2024-09-21 15:02:19,966:INFO:Load train data
+2024-09-21 15:02:24,504:INFO:Load store data
+2024-09-21 15:12:14,159:INFO:Check how the assortment type affects sales
+2024-09-21 15:12:14,319:INFO:  StoreType Assortment         Sales
+0         a          a   5398.858310
+1         a          c   6310.867032
+2         b          a  10821.619806
+3         b          b   8553.931999
+4         b          c  17969.556263
+5         c          a   5647.174314
+6         c          c   5805.782193
+7         d          a   5317.885943
+8         d          c   5826.407660
+2024-09-21 15:12:22,229:INFO: How does the distance to the next competitor affect sales? What if the store and its competitors all happen to be in city centers, does the distance matter in that case?
+2024-09-21 15:12:24,854:INFO:Correlation between Competition Distance and Sales: -0.02
