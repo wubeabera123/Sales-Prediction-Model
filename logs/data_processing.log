@@ -119,3 +119,87 @@ Public Holiday       0.0  38484.0
 2024-09-20 17:31:54,102:INFO:  BeforeOrAfterCompetition        Sales
 0    After Competitor Open  5755.586092
 1   Before Competitor Open  5974.642737
+2024-09-20 21:56:43,208:INFO:Load train data
+2024-09-20 21:56:49,983:INFO:Load test data
+2024-09-20 21:56:55,007:INFO:Load store data
+2024-09-20 21:56:59,058:INFO:The first 5 rows
+2024-09-20 21:56:59,058:INFO:    Id  Store  DayOfWeek        Date  Open  Promo StateHoliday  SchoolHoliday
+0  1.0    1.0        4.0  2015-09-17   1.0    1.0            0            0.0
+1  2.0    3.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2  3.0    7.0        4.0  2015-09-17   1.0    1.0            0            0.0
+3  4.0    8.0        4.0  2015-09-17   1.0    1.0            0            0.0
+4  5.0    9.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2024-09-20 21:57:02,129:INFO:Check the value distribution of promotion in both datasets 
+2024-09-20 21:57:02,146:INFO:Promo
+0.0    0.604167
+1.0    0.395833
+Name: proportion, dtype: float64
+2024-09-20 21:57:02,150:INFO:Promo
+0.0    0.604167
+1.0    0.395833
+Name: proportion, dtype: float64
+2024-09-20 21:57:02,152:INFO:Promo2
+1.0    0.522099
+0.0    0.477901
+Name: proportion, dtype: float64
+2024-09-20 21:57:02,218:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 21:57:02,229:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 21:57:02,273:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 21:57:02,277:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 21:57:02,293:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 21:57:02,299:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-20 21:57:10,056:INFO:Check & compare sales behavior before, during, and after holidays
+2024-09-20 21:57:20,028:INFO:                     count         mean          std  min     25%     50%  \
+holiday_category                                                            
+During Holiday    181721.0  6476.522207  3709.677337  0.0  4447.0  6197.0   
+Non-Holiday       835488.0  5620.979034  3862.873159  0.0  3506.0  5642.0   
+
+                     75%      max  
+holiday_category                   
+During Holiday    8343.0  38367.0  
+Non-Holiday       7749.0  41551.0  
+2024-09-20 21:57:24,723:INFO:Find out any seasonal (Christmas, Easter, etc) purchase behavior
+2024-09-20 21:57:33,898:INFO:                     count         mean          std  min     25%     50%  \
+holiday_category                                                            
+Christmas           4100.0   168.733171  1492.274865  0.0     0.0     0.0   
+Easter              6690.0   214.311510  1816.918138  0.0     0.0     0.0   
+Non-Holiday       986159.0  5947.483893  3767.890619  0.0  3967.0  5849.0   
+Public Holiday     20260.0   290.735686  1870.281698  0.0     0.0     0.0   
+
+                     75%      max  
+holiday_category                   
+Christmas            0.0  32169.0  
+Easter               0.0  38722.0  
+Non-Holiday       7936.0  41551.0  
+Public Holiday       0.0  38484.0  
+2024-09-20 21:57:37,661:INFO:Correlation between sales and number of customers
+2024-09-21 08:51:55,973:INFO:Load train data
+2024-09-21 08:51:58,301:INFO:Load test data
+2024-09-21 08:52:04,829:INFO:Load store data
+2024-09-21 08:52:06,819:INFO:Load store data
+2024-09-21 09:09:51,748:INFO:The first 5 rows
+2024-09-21 09:09:51,749:INFO:    Id  Store  DayOfWeek        Date  Open  Promo StateHoliday  SchoolHoliday
+0  1.0    1.0        4.0  2015-09-17   1.0    1.0            0            0.0
+1  2.0    3.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2  3.0    7.0        4.0  2015-09-17   1.0    1.0            0            0.0
+3  4.0    8.0        4.0  2015-09-17   1.0    1.0            0            0.0
+4  5.0    9.0        4.0  2015-09-17   1.0    1.0            0            0.0
+2024-09-21 09:09:55,797:INFO:Check the value distribution of promotion in both datasets 
+2024-09-21 09:09:55,820:INFO:Promo
+0.0    0.604167
+1.0    0.395833
+Name: proportion, dtype: float64
+2024-09-21 09:09:55,820:INFO:Promo
+0.0    0.604167
+1.0    0.395833
+Name: proportion, dtype: float64
+2024-09-21 09:09:55,825:INFO:Promo2
+1.0    0.522099
+0.0    0.477901
+Name: proportion, dtype: float64
+2024-09-21 09:09:55,866:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-21 09:09:55,886:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-21 09:09:55,933:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-21 09:09:55,941:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-21 09:09:55,970:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-21 09:09:55,980:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
