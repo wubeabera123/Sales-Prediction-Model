@@ -481,3 +481,107 @@ dtype: int64
 22             StateHoliday_a_True    0.000004
 24             StateHoliday_b_True    0.000000
 26             StateHoliday_c_True    0.000000
+2024-09-22 14:26:30,559:INFO:Load cleaned store data
+2024-09-22 14:26:38,787:INFO:Starting preprocessing with updated dataframe
+2024-09-22 14:26:39,226:INFO:One-hot encoded StoreType, Assortment, and StateHoliday columns
+2024-09-22 14:26:42,702:INFO:Handling missing values for Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-22 14:26:42,765:INFO:Filled missing values in Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-22 14:26:46,186:INFO:Extracting features from the Date column
+2024-09-22 14:26:48,370:INFO:Extracted day of week, weekend indicator, and month-day-related features
+2024-09-22 14:26:51,852:INFO:Starting to scale numeric features
+2024-09-22 14:26:52,066:INFO:Scaled features: Sales, CompetitionDistance, Promo2SinceWeek, and Promo2SinceYear
+2024-09-22 14:26:55,879:INFO:Preprocessing completed and dataset is ready for modeling
+2024-09-22 14:26:59,602:INFO:Missing values in X before preprocessing: 
+Store                             0
+CompetitionDistance            2642
+CompetitionOpenSinceMonth    323348
+CompetitionOpenSinceYear     323348
+Promo2                            0
+Promo2SinceWeek                   0
+Promo2SinceYear                   0
+PromoInterval                     0
+DayOfWeek                         0
+Customers                         0
+Open                              0
+Promo                             0
+SchoolHoliday                     0
+StoreType_b                       0
+StoreType_c                       0
+StoreType_d                       0
+Assortment_b                      0
+Assortment_c                      0
+StateHoliday_a                    0
+StateHoliday_b                    0
+StateHoliday_c                    0
+IsWeekend                         0
+MonthDay                          0
+IsBeginningOfMonth                0
+IsMidMonth                        0
+IsEndOfMonth                      0
+dtype: int64
+2024-09-22 14:27:00,189:INFO:Training data shape: (813767, 26)
+2024-09-22 14:27:00,189:INFO:Testing data shape: (203442, 26)
+2024-09-22 14:27:00,189:INFO:Pipeline created with StandardScaler, OneHotEncoder, and RandomForestRegressor.
+2024-09-22 14:32:08,194:INFO:Missing values in X before preprocessing: 
+Store                             0
+CompetitionDistance            2642
+CompetitionOpenSinceMonth    323348
+CompetitionOpenSinceYear     323348
+Promo2                            0
+Promo2SinceWeek                   0
+Promo2SinceYear                   0
+PromoInterval                     0
+DayOfWeek                         0
+Customers                         0
+Open                              0
+Promo                             0
+SchoolHoliday                     0
+StoreType_b                       0
+StoreType_c                       0
+StoreType_d                       0
+Assortment_b                      0
+Assortment_c                      0
+StateHoliday_a                    0
+StateHoliday_b                    0
+StateHoliday_c                    0
+IsWeekend                         0
+MonthDay                          0
+IsBeginningOfMonth                0
+IsMidMonth                        0
+IsEndOfMonth                      0
+dtype: int64
+2024-09-22 14:32:08,694:INFO:Training data shape: (813767, 26)
+2024-09-22 14:32:08,698:INFO:Testing data shape: (203442, 26)
+2024-09-22 14:32:08,698:INFO:Pipeline created with StandardScaler, OneHotEncoder, and RandomForestRegressor.
+2024-09-22 14:41:12,949:INFO:Model training completed.
+2024-09-22 14:41:21,558:INFO:Model prediction completed.
+2024-09-22 14:41:21,560:INFO:Test RMSE: 0.4457
+2024-09-22 14:41:21,562:INFO:Test MAE: 0.2826
+2024-09-22 14:41:22,075:INFO:Feature importances:                            Feature  Importance
+7                        DayOfWeek    0.416706
+1              CompetitionDistance    0.127170
+0                            Store    0.109804
+8                         MonthDay    0.066359
+21            StateHoliday_a_False    0.059967
+2        CompetitionOpenSinceMonth    0.056269
+3         CompetitionOpenSinceYear    0.044215
+6                  Promo2SinceYear    0.022877
+23            StateHoliday_b_False    0.021340
+5                  Promo2SinceWeek    0.014774
+25            StateHoliday_c_False    0.012541
+18               Assortment_b_True    0.008858
+19              Assortment_c_False    0.007913
+20               Assortment_c_True    0.006943
+17              Assortment_b_False    0.005831
+15  PromoInterval_Mar,Jun,Sept,Dec    0.004092
+14   PromoInterval_Jan,Apr,Jul,Oct    0.003524
+9                        IsWeekend    0.002729
+16              PromoInterval_None    0.002319
+13   PromoInterval_Feb,May,Aug,Nov    0.001968
+11                      IsMidMonth    0.001598
+4                           Promo2    0.001049
+12                    IsEndOfMonth    0.000723
+10              IsBeginningOfMonth    0.000427
+22             StateHoliday_a_True    0.000004
+24             StateHoliday_b_True    0.000000
+26             StateHoliday_c_True    0.000000
