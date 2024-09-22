@@ -49,6 +49,4 @@ def clean_data(df):
     
     return df
 
-# Example usage:
-# df = pd.read_csv('your_data.csv')
-# cleaned_df = clean_data(df)
+
