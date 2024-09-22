@@ -585,3 +585,6 @@ dtype: int64
 22             StateHoliday_a_True    0.000004
 24             StateHoliday_b_True    0.000000
 26             StateHoliday_c_True    0.000000
+2024-09-22 15:38:38,821:INFO:Preprocessing completed and dataset is ready for modeling
+2024-09-22 15:45:08,127:INFO:Load cleaned store data
+2024-09-22 16:56:48,334:INFO:Load cleaned store data
