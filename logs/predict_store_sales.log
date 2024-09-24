@@ -588,3 +588,35 @@ dtype: int64
 2024-09-22 15:38:38,821:INFO:Preprocessing completed and dataset is ready for modeling
 2024-09-22 15:45:08,127:INFO:Load cleaned store data
 2024-09-22 16:56:48,334:INFO:Load cleaned store data
+2024-09-23 08:49:36,719:INFO:Load cleaned store data
+2024-09-23 08:50:44,772:INFO:Starting preprocessing with updated dataframe
+2024-09-23 08:50:45,640:INFO:One-hot encoded StoreType, Assortment, and StateHoliday columns
+2024-09-23 08:50:48,518:INFO:Handling missing values for Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-23 08:50:48,594:INFO:Filled missing values in Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-23 08:50:52,884:INFO:Extracting features from the Date column
+2024-09-23 08:50:55,648:INFO:Extracted day of week, weekend indicator, and month-day-related features
+2024-09-23 08:50:58,379:INFO:Starting to scale numeric features
+2024-09-23 08:50:58,641:INFO:Scaled features: Sales, CompetitionDistance, Promo2SinceWeek, and Promo2SinceYear
+2024-09-23 08:51:02,059:INFO:Preprocessing completed and dataset is ready for modeling
+2024-09-23 22:09:36,667:INFO:Load cleaned store data
+2024-09-23 22:09:45,376:INFO:Starting preprocessing with updated dataframe
+2024-09-23 22:09:45,779:INFO:One-hot encoded StoreType, Assortment, and StateHoliday columns
+2024-09-23 22:09:48,967:INFO:Handling missing values for Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-23 22:09:49,029:INFO:Filled missing values in Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-23 22:10:46,179:INFO:Handling missing values for Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-23 22:10:46,246:INFO:Filled missing values in Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-23 22:11:34,575:INFO:Extracting features from the Date column
+2024-09-23 22:11:36,988:INFO:Extracted day of week, weekend indicator, and month-day-related features
+2024-09-23 22:11:40,833:INFO:Starting to scale numeric features
+2024-09-23 22:11:41,061:INFO:Scaled features: Sales, CompetitionDistance, Promo2SinceWeek, and Promo2SinceYear
+2024-09-23 22:12:12,443:INFO:Starting to scale numeric features
+2024-09-23 22:12:12,676:INFO:Scaled features: Sales, CompetitionDistance, Promo2SinceWeek, and Promo2SinceYear
+2024-09-24 08:32:20,936:INFO:Load cleaned store data
+2024-09-24 08:32:27,719:INFO:Starting preprocessing with updated dataframe
+2024-09-24 08:32:28,180:INFO:One-hot encoded StoreType, Assortment, and StateHoliday columns
+2024-09-24 08:32:32,271:INFO:Handling missing values for Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-24 08:32:32,333:INFO:Filled missing values in Promo2SinceWeek, Promo2SinceYear, and PromoInterval
+2024-09-24 08:32:35,566:INFO:Extracting features from the Date column
+2024-09-24 08:32:37,707:INFO:Extracted day of week, weekend indicator, and month-day-related features
+2024-09-24 08:32:40,943:INFO:Starting to scale numeric features
+2024-09-24 08:32:41,163:INFO:Scaled features: Sales, CompetitionDistance, Promo2SinceWeek, and Promo2SinceYear
