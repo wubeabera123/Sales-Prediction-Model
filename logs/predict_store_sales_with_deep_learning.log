@@ -33,3 +33,27 @@
 2024-09-23 16:22:48,407:INFO:Test RMSE: 1.0081562995910645
 2024-09-23 16:22:48,407:INFO:Plotting the results.
 2024-09-23 16:22:48,887:INFO:Process complete.
+2024-09-23 21:26:59,829:INFO:Load cleaned store data
+2024-09-23 21:27:03,458:INFO:Sampling the data to 10% for memory efficiency.
+2024-09-23 21:27:03,619:INFO:Preprocessing the data.
+2024-09-23 21:27:03,712:INFO:Performing ADF test to check stationarity.
+2024-09-23 21:27:37,957:INFO:ADF Statistic: -224.44179127183483
+2024-09-23 21:27:37,957:INFO:p-value: 0.0
+2024-09-23 21:27:37,957:INFO:Data is stationary. No differencing required.
+2024-09-23 21:27:37,957:INFO:Transforming the time series data into supervised learning format.
+2024-09-23 21:27:37,957:INFO:Scaling the data between (-1, 1).
+2024-09-23 21:27:37,957:INFO:Creating sliding window data with time_step=5.
+2024-09-23 21:27:38,094:INFO:Splitting the data into training and testing sets.
+2024-09-23 21:27:38,094:INFO:Building the LSTM model.
+2024-09-23 21:27:38,324:INFO:Compiling the model.
+2024-09-23 21:27:38,333:INFO:Training the model.
+2024-09-23 21:31:58,077:INFO:Making predictions on the test set.
+2024-09-23 21:32:00,402:INFO:Inverse transforming to get actual sales values.
+2024-09-23 21:32:00,402:INFO:Calculating RMSE.
+2024-09-23 21:32:00,402:INFO:Test RMSE: 1.0079238414764404
+2024-09-23 21:32:00,402:INFO:Plotting the results.
+2024-09-23 21:32:00,883:INFO:Process complete.
+2024-09-23 21:32:00,895:WARNING:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-09-23 21:32:07,003:WARNING:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-09-23 21:32:09,524:WARNING:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2024-09-23 21:34:11,828:WARNING:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 

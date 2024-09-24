@@ -38,7 +38,7 @@ def read_root():
     return {"message": "Welcome to the Sales Prediction API"}
 
 # Prediction endpoint
-@app.post("/predict/")
+@app.post("/predict-sales/")
 def predict_sales(input_data: SalesPredictionInput):
     # Convert the input data to a DataFrame
     input_df = pd.DataFrame([input_data.dict()])

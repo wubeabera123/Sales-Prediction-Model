@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import pickle
 import numpy as np
+from tensorflow.keras.models import load_model
 
 # Define the FastAPI app
 app = FastAPI()
 
-# Define the input data model for predictions (adjust these fields based on your use case)
+# Define the input data model for predictions
 class SalesPredictionInput(BaseModel):
     Store: int
     CompetitionDistance: float
@@ -28,25 +28,18 @@ class SalesPredictionInput(BaseModel):
     StateHoliday_b: bool
     StateHoliday_c: bool
 
-# Load the saved model architecture and weights from .pkl files
-with open("saved_models/model_architecture-23-09-2024-17-28-04-042.pkl", "rb") as f:
-    model = pickle.load(f)
-
-with open("saved_models/model_weights-23-09-2024-17-28-04-042.pkl", "rb") as f:
-    weights = pickle.load(f)
-
-# Set the loaded weights to the model (Keras models usually expect set_weights())
-model.set_weights(weights)
+# Load the saved model (using .h5 format)
+model = load_model("saved_models/model-23-09-2024-21-34-11-828.h5")
 
 # Root endpoint
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the Sales Prediction API"}
+    return {"message": "Welcome to the Sales Prediction API using deep learning"}
 
 # Prediction endpoint
 @app.post("/predict/")
 def predict_sales(input_data: SalesPredictionInput):
-    # Convert the input data to a numpy array (adjust the order to match your model's input)
+    # Convert the input data to a numpy array (adjust this to match your model's input)
     input_array = np.array([[input_data.Store,
                              input_data.CompetitionDistance,
                              input_data.CompetitionOpenSinceMonth,
@@ -66,13 +59,11 @@ def predict_sales(input_data: SalesPredictionInput):
                              input_data.StateHoliday_b,
                              input_data.StateHoliday_c]])
 
-    # Reshape the input to match the model's expected input shape if necessary
-    # (e.g., model expects 3D input for LSTM or 2D for Dense layers)
-    # For LSTM, it might look like this:
-    # input_array = input_array.reshape((1, input_array.shape[1], 1))
-
-    # Predict using the model
+    # Predict using the loaded model
     prediction = model.predict(input_array)
 
+    # Convert the prediction to a native Python data type (e.g., float)
+    predicted_sales = float(prediction[0][0])
+
     # Return the prediction as a JSON response
-    return {"predicted_sales": prediction[0][0]}
+    return {"predicted_sales": predicted_sales}
